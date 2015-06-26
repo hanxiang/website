@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width" />
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/png">
+        <title></title>
+        <link href="../../resources/js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../../resources/js/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="../../resources/js/Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../../resources/css/docs.min.css" rel="stylesheet" />
+        <link href="../../resources/css/main.css" rel="stylesheet" />
+        <script src="../../resources/js/jquery-1.10.2.min.js"></script>
+        <script src="../../resources/js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+        <link href="../../resources/css/4g.css" rel="stylesheet" />
+        <link href="../../resources/css/buttons.css" rel="stylesheet" />
+        <style>
+            #my_bill_info p {
+                font-size:26px;
+                line-height:50px;
+            }
+
+            #table_detail ,#table_my_bill{
+                font-size:26px;
+                color:#666;
+            }
+
+
+            #table_detail tr:first-child, tr:last-child{
+                height:50px;
+            }
+
+            #table_detail tr > td:first-child{
+                padding-left:20px;
+            }
+
+            #table_my_bill tr > td:first-child{
+                padding-left:20px;
+            }
+            #jf_desc {
+                line-height:45px;
+                font-size:24px;
+                padding-left:20px;
+                padding-top:16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="container-fluid" style="height:50px;border-bottom:1px #eee solid;">
+            <div class="row title">
+                <div class="col-xs-2 col-md-2 "><a href="#"><i class="icon-angle-left icon-3x"></i></a></div>
+                <div class="col-xs-8 col-md-8 text-center "><span>我的账单</span></div>
+                <div class="col-xs-2 col-md-2 text-right title_share">
+                    <a href="#"><img src="../../resources/images/share40.png" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <div class="row color_a1a1a1">
+                *提供近6个月的账单查询，数据仅供参考，实际以营业厅查询为准
+            </div>
+        </div>
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;padding-left: 0px;padding-right: 0px;">
+            <table class="table table_no_top" style="">
+                <tr>
+                    <td style="text-align:left;">
+                        <input type="submit" class="button button-pill " value="2015年4月" style="border-bottom-left-radius:0px;border-top-left-radius:0px;">
+                    </td>
+                    <td>
+                        <div class="color_cmBlue" style="font-size:18px;line-height:40px;">2015年5月</div>
+                    </td>
+                    <td  style="text-align:right;">
+                        <input type="submit" class="button button-pill " value="2015年6月" style="border-bottom-right-radius:0px;border-top-right-radius:0px;">
+                    </td>
+                </tr>
+            </table>
+
+            
+        </div>
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <div id="my_bill_info" class="row color_666">
+
+                <p>客户：XXXXXXXXX</p>
+                <p>手机号码：1390000000</p>
+                <p>计费类型：XXXX</p>
+                <p>计费周期：2015年11月01日至2014年11月30日</p>
+                <p>本期费用总额（元）：300</p>
+                <p>本期优惠（元）：242.48</p>
+                <p>本期实际费用（元）：150</p>
+                <p>本期积分结余：113</p>
+
+            </div>
+
+            
+        </div>
+
+
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;padding-left: 0px;padding-right: 0px;">
+
+            <div class="row " style="margin:10px 0px;">
+                <table id="table_detail" class="table table-bordered" style="">
+                    
+                    <tr class="text-center backgrpund_color_eee">
+                        <td>
+                            费用信息
+                        </td>
+                        <td>
+                            金额（元）
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            套餐及固定费用
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            套餐外费用
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td class="color_a1a1a1" style="text-indent:2em ">
+                            - 语音通信费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left " >
+                        <td class="color_a1a1a1" style="text-indent:2em ">
+                            - 上网费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td class="color_a1a1a1" style="text-indent:2em ">
+                            - 短彩信费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            增值业务费用
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            短彩信费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            其他（代他人付费等）
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-center backgrpund_color_eee">
+                        <td>
+                            总额
+                        </td>
+                        <td>
+                            50元
+                        </td>                    
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;padding-left: 0px;padding-right: 0px;">
+
+            <div class="row " style="margin:10px 0px;">
+                <table id="table_my_bill" class="table table-bordered" style="">
+                    <tr class="text-center backgrpund_color_eee">
+                        <td colspan="2">
+                            139XXXXXXXX 账户 
+                        </td>
+                                           
+                    </tr>
+                    <tr class="text-center backgrpund_color_eee">
+                        <td>
+                            费用信息
+                        </td>
+                        <td>
+                            需交费用（元）
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            上期余额
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            本期收入
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    
+                    <tr class="text-left ">
+                        <td>
+                            本期退费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            本期可用
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            消费支出
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            其他支出
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            本期失效
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-center backgrpund_color_eee">
+                        <td>
+                            本期末余额
+                        </td>
+                        <td>
+                            50元
+                        </td>                    
+                    </tr>
+                </table>
+            </div>
+            <div class="row" style="height:20px;background-color:#eee;border-top:1px #ccc solid;border-bottom:1px #ccc solid;margin-bottom:15px;"></div>
+
+        </div>
+
+
+        
+
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <h2>当前可用积分余额：<span class="color_jf_red">113</span></h2>
+            <div id="jf_desc" class="row color_666">
+
+                积分说明：可用积分余额（113） = 上期可用积分余额（113）+ 本期新增积分（0）+ 本期奖励积分（0）+ 本期转赠积分（0） - 本期对换积分总数（0）
+                
+
+            </div>
+
+            
+        </div>
+    </body>
+</html>
+
+

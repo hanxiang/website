@@ -1,0 +1,17 @@
+﻿ .menu2 {
+    color: #666666;
+    font-family: "微软雅黑 Regular","微软雅黑";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:85px;
+}
+   
+ .menu2 > div > .active {
+    background-color: #fff;
+    color:#01A0EB;
+}
+
+.ywgz > p {
+    line-height:22px;
+}

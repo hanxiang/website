@@ -1,0 +1,93 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, input, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    font-family: FontAwesome,"Microsoft YaHei" !important;
+}
+
+    a:visited {
+        color:#333;
+    }
+
+.title {
+    color:#01A0EB;
+    
+}
+    .title > div > i {
+    }
+
+
+    .title > div > span{
+        line-height: 50px;
+        font-size: 26px;
+    }
+
+.title_share {
+    padding-top:6px;
+}
+
+
+.menu2 {
+    color: #666666;
+    font-family: "微软雅黑 Regular","微软雅黑";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:85px;
+}
+
+.table_no_top {
+    border-top: 2px solid #fff;
+    border-top-width:0px;
+}
+    .table_no_top > tbody > tr > td {
+        border-top :0px;
+    }
+.table_no_top_eee {
+    border-top: 2px solid #eee;
+}
+
+
+
+.hr5 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.color_purple {
+    color:#F63274;
+}
+
+.color_666 {
+    color:#666;
+}
+.color_333 {
+    color:#333;
+}
+
+
+.color_a1a1a1 {
+    color:#a1a1a1;
+}
+
+.color_jf_red {
+    color:#CC5566;
+}
+
+.color_cmBlue {
+    color:#01A0EB;
+}
+.backgrpund_color_eee {
+    background-color:#eee;
+}
+

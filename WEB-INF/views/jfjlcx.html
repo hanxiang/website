@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width" />
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/png">
+        <title></title>
+        <link href="../../resources/js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../../resources/js/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="../../resources/js/Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../../resources/css/docs.min.css" rel="stylesheet" />
+        <link href="../../resources/css/main.css" rel="stylesheet" />
+        <script src="../../resources/js/jquery-1.10.2.min.js"></script>
+        <script src="../../resources/js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+        <link href="../../resources/css/4g.css" rel="stylesheet" />
+        <link href="../../resources/css/buttons.css" rel="stylesheet" />
+        <style>
+            #my_bill_info p {
+                font-size:26px;
+                line-height:50px;
+            }
+
+            #table_detail ,.table_jf_detail{
+                font-size:26px;
+                color:#666;
+            }
+
+
+            #table_detail tr:first-child, tr:last-child{
+                height:50px;
+            }
+
+            #table_detail tr > td:first-child{
+                padding-left:20px;
+            }
+
+            .table_jf_detail tr > td:first-child{
+                padding-left:20px;
+            }
+            #jf_desc {
+                line-height:45px;
+                font-size:24px;
+                padding-left:20px;
+                padding-top:16px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="container-fluid" style="height:50px;border-bottom:1px #eee solid;">
+            <div class="row title">
+                <div class="col-xs-2 col-md-2 "><a href="#"><i class="icon-angle-left icon-3x"></i></a></div>
+                <div class="col-xs-8 col-md-8 text-center "><span>缴费记录查询</span></div>
+                <div class="col-xs-2 col-md-2 text-right title_share">
+                    <a href="#"><img src="../../resources/images/share40.png" /></a>
+                </div>
+            </div>
+        </div>
+
+       <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <div id="my_bill_info" class="row color_333">
+                <p>开始时间：2015年5月1日</p>
+                <p>结束时间：2015年5月31日</p>
+                <p>总金额：500元</p>
+            </div>
+        </div>
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <div class="row color_a1a1a1" style="font-size:24px;">
+                *仅提供最近6个月的记录
+            </div>
+        </div>
+
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;padding-left: 0px;padding-right: 0px;">
+            <div class="row " style="margin:10px 0px;">
+                <table class="table_jf_detail table table-bordered" style="">
+                    <tr class="text-center ">
+                        <td colspan="2">
+                            <table id="table1" class="table table_no_top" style="margin-bottom: 0px;">
+                                <tr class="text-center ">
+                                    <td class="text-left">
+                                        2015-05-03 13:31:23
+                                    </td>
+                                    <td class="text-right">
+                                        50元
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="backgrpund_color_eee">
+                        <td>
+                            缴费类型
+                        </td>
+                        <td>
+                            营销活动送费
+                        </td>                    
+                    </tr>
+                    <tr class="backgrpund_color_eee">
+                        <td>
+                            缴费方式
+                        </td>
+                        <td>
+                            系统划拨
+                        </td>                    
+                    </tr>
+                    <tr class="backgrpund_color_eee">
+                        <td>
+                            备注
+                        </td>
+                        <td>
+                            网厅充值：9.85折扣率充值缴费
+                        </td>                    
+                    </tr>
+                </table>
+            </div>
+
+            <div class="row " style="margin:10px 0px;">
+                <table class="table table_jf_detail table-bordered" style="">
+                    <tr class="text-center ">
+                        <td colspan="2">
+                            <table id="table3" class="table table_no_top" style="margin-bottom: 0px;">
+                                <tr class="text-center ">
+                                    <td class="text-left">
+                                        2015-05-03 13:31:23
+                                    </td>
+                                    <td class="text-right">
+                                        50元
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr class="backgrpund_color_eee">
+                        <td>
+                            缴费类型
+                        </td>
+                        <td>
+                            营销活动送费
+                        </td>                    
+                    </tr>
+                    <tr class="backgrpund_color_eee">
+                        <td>
+                            缴费方式
+                        </td>
+                        <td>
+                            系统划拨
+                        </td>                    
+                    </tr>
+                    <tr class="backgrpund_color_eee">
+                        <td>
+                            备注
+                        </td>
+                        <td>
+                            网厅充值：9.85折扣率充值缴费
+                        </td>                    
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
+
+

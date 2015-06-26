@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <meta name="viewport" content="width=device-width" />
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="~/Content/images/favicon.ico" type="image/png">
+        <title></title>
+        <link href="../../resources/js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../../resources/js/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="../../resources/js/Font-Awesome-3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="../../resources/css/docs.min.css" rel="stylesheet" />
+        <link href="../../resources/css/main.css" rel="stylesheet" />
+        <script src="../../resources/js/jquery-1.10.2.min.js"></script>
+        <script src="../../resources/js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+        <link href="../../resources/css/4g.css" rel="stylesheet" />
+        <link href="../../resources/css/buttons.css" rel="stylesheet" />
+        <style>
+            .progress-bar-yd {
+                background-image: linear-gradient(to bottom, #01a0eb 0px, #01a0eb 100%);
+                background-repeat: repeat-x;
+            }
+
+            .progress {
+                background-color: #f5f5f5;
+                border-radius: 20px;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+                height: 30px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                margin-top:20px;
+            }
+            .detial_info > div {
+                margin-top:10px;
+            }
+            .detial_info > div > p {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .table_info {
+
+                margin:10px 5px;
+                font-size:26px;
+                text-align:center;
+            }
+            #table_detail{
+                font-size:26px;
+                color:#666;
+            }
+            #table_detail tr:first-child, tr:last-child{
+                height:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="container-fluid" style="height:50px;border-bottom:1px #eee solid;">
+            <div class="row title">
+                <div class="col-xs-2 col-md-2 "><a href="#"><i class="icon-angle-left icon-3x"></i></a></div>
+                <div class="col-xs-8 col-md-8 text-center "><span>话费查询</span></div>
+                <div class="col-xs-2 col-md-2 text-right title_share">
+                    <a href="#"><img src="../../resources/images/share40.png" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <div class="row col-xs-8 col-md-8" style="margin:10px 0px;">
+                <h2 class="text-left" style="color:#666666">手机号码：13999999999</h2>
+            </div>
+            <div class="row col-xs-12 col-md-12" style="background-color:#eee;border-top:1px #ccc solid;">
+                <table class="table table_no_top_eee table_info" style="">
+                    <tr>
+                        <td class="text-right color_666">
+                            账户余额：
+                        </td>
+                        <td class="text-left color_purple">
+                            32.00元
+                        </td>
+                        <td class="text-right color_666">
+                            当月消费：
+                        </td>
+                        <td class="text-left color_purple">
+                            34.56元
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-right color_666">
+                            我的网龄：
+                        </td>
+                        <td class="text-left color_purple">
+                            3年6月
+                        </td>
+                        <td class="text-right color_666">
+                            我的积分：
+                        </td>
+                        <td class="text-left color_purple">
+                            689分
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+        <div class="container-fluid " style="padding-top: 20px; max-width: 650px;">
+            <table class="table table_no_top" style="">
+                <tr>
+                    <td>
+                        <img src="../../resources/images/menu/menu2_czjf.png" />
+                    </td>
+                    <td>
+                        <img src="../../resources/images/menu/menu2_wdzd.png" />
+                    </td>
+                    <td>
+                        <img src="../../resources/images/menu/menu2_yetx.png" />
+                    </td>
+                </tr>
+            </table>
+
+            <div class="row" style="height:20px;background-color:#eee;border-top:1px #ccc solid;border-bottom:1px #ccc solid;margin-bottom:15px;"></div>
+
+            <div class="row col-xs-8 col-md-8" style="margin:10px 0px;">
+                <h2 class="text-left" style="color:#666666">当月未出账话费</h2>
+            </div>
+            <div class="row " style="margin:10px 0px;">
+                <table id="table_detail" class="table table-bordered" style="">
+                    <tr class="text-center backgrpund_color_eee">
+                        <td>
+                            科目
+                        </td>
+                        <td>
+                            金额（元）
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            来电显示
+                        </td>
+                        <td class="text-center ">
+                            免费
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            数据流量套餐叠加费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            增值业务-月租费
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-left ">
+                        <td>
+                            市话主叫
+                        </td>
+                        <td class="text-center ">
+                            10元
+                        </td>                    
+                    </tr>
+                    <tr class="text-center backgrpund_color_eee">
+                        <td>
+                            总额
+                        </td>
+                        <td>
+                            50元
+                        </td>                    
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+        
+    </body>
+</html>
+
+
